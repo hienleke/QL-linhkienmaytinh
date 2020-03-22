@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="persistence">
+    <class>entities.Nhacungcap</class>
+    <class>entities.Khachhang</class>
+    <class>entities.Nhanvien</class>
+    <class>entities.Hoadon</class>
+    <class>entities.Xuatxu</class>
+    <class>entities.Danhmuclinhkien</class>
+    <class>entities.CT_hoadon</class>
+    <class>entities.CT_hoadon_PK</class>
+    <class>entities.Nhacuncap</class>
+
+
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+      <property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=ptudfinal"/>
+      <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="hibernate.connection.username" value="sa"/>
+      <property name="hibernate.connection.password" value="123"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
